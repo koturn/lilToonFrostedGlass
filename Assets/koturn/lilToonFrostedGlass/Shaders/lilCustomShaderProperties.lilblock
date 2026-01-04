@@ -1,4 +1,7 @@
 
         //----------------------------------------------------------------------------------------------------------------------
         // Custom Properties
-        //_CustomVariable ("Custom Variable", Float) = 0
+        //_CustomVariable ("sCustomVariable", Float) = 0
+        [IntRange] _GaussKernelSize ("sGaussKernelSize", Range(1, 50)) = 10
+        _GaussStdDev ("sGaussStdDev", Range(0.001, 10.0)) = 5.0
+        _FrostedGlassBlend ("sFrostedGlassBlend", Range(0.0, 1.0)) = 0.5

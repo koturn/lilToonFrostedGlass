@@ -2,9 +2,10 @@
 // Macro
 
 // Custom variables
-//#define LIL_CUSTOM_PROPERTIES \
-//    float _CustomVariable;
-#define LIL_CUSTOM_PROPERTIES
+#define LIL_CUSTOM_PROPERTIES \
+    int _GaussKernelSize; \
+    float _GaussStdDev; \
+    float _FrostedGlassBlend;
 
 // Custom textures
 #define LIL_CUSTOM_TEXTURES
@@ -45,6 +46,9 @@
 // Inserting a process into pixel shader
 //#define BEFORE_xx
 //#define OVERRIDE_xx
+#define BEFORE_SHADOW \
+    fd.col.rgb = lerp(fd.col.rgb, sampleGrabTextureWithBlur(fd.positionSS).rgb, _FrostedGlassBlend); \
+    fd.albedo = fd.col.rgb;
 
 //----------------------------------------------------------------------------------------------------------------------
 // Information about variables
