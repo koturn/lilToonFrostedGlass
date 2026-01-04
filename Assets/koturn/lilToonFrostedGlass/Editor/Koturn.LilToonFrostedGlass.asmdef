@@ -1,14 +1,14 @@
 {
-    "name": "TemplateFull",
-    "rootNamespace": "",
+    "name": "Koturn.LilToonFrostedGlass",
+    "rootNamespace": "Koturn.LilToonFrostedGlass",
     "references": [
-        "lilToon.Editor"
+        "GUID:e7f0f8dffe955d640bbc76d1d4f4986e"
     ],
     "includePlatforms": [
         "Editor"
     ],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
+    "allowUnsafeCode": true,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": false,
