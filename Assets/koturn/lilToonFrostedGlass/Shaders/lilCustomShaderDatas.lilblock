@@ -1,2 +1,5 @@
 ShaderName "koturn/lilToonFrostedGlass"
 EditorName "Koturn.LilToonFrostedGlass.FrostedGlassInspector"
+Replace "\r\n" "\n"
+Replace "\r" "\n"
+Replace "        // Forward\n" "        GrabPass {}\n\n        // Forward\n"

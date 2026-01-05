@@ -21,7 +21,7 @@ float4 sampleGrabTextureWithBlur(float4 positionSS)
             const float2 p = (float2)sampleOffset;
             const float weight = gaussian(p, _GaussStdDev);
             const float2 uv = (positionSS.xy + p * d) / positionSS.w;
-            color += weight * LIL_SAMPLE_2D(_GrabTexture, lil_sampler_linear_clamp, uv);
+            color += weight * LIL_GET_GRAB_TEX(uv, 0);
             weightSum += weight;
         }
     }
