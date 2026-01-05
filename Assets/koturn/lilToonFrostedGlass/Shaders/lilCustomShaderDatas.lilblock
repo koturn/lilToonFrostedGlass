@@ -1,2 +1,5 @@
 ShaderName "koturn/lilToonFrostedGlass"
 EditorName "Koturn.LilToonFrostedGlass.FrostedGlassInspector"
+InsertPassPre "PrePass.lilblock"
+InsertPassPre "Gem" "PrePassNone.lilblock"
+InsertPassPre "Refraction" "PrePassNone.lilblock"
